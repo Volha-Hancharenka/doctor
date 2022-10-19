@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   z-index: 50;
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    
+
     z-index: 3;
   }
 
@@ -24,19 +24,15 @@
     height: 80px;
     font-size: 16px;
     color: #263238;
-    
-   
-  }
-  &__body {
-    margin-top: 22px;
+    @media (max-width: 767px) {
+      height: 56px;
+    }
     position: relative;
     z-index: 2;
     display: flex;
     align-items: center;
-    
-    
   }
- 
+
   &__menu {
     margin-left: 40px;
     @media (max-width: 970px) {
@@ -59,7 +55,7 @@
     transition: all 0.3s ease 0s;
     //@media (max-width: 767px) {
     //  width: 100%;
-      //display: none;
+    //display: none;
     //}
 
     &_text {
@@ -75,9 +71,6 @@
 .logo {
   position: relative;
   z-index: 5;
-  //align-items: baseline;
-
-  img {
-    max-width: 100%;
-  }
+  width: 118px;
+  height: 36px;
 }
