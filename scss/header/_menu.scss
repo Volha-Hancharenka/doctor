@@ -33,6 +33,7 @@
     @media (max-width: 767px) {
       display: flex;
       flex-direction: column;
+      
     }
   }
   &__item {
@@ -40,6 +41,11 @@
     padding-right: 40px;
     @media (max-width: 970px) {
       padding-right: 18px;
+      //padding-bottom: 32px;
+    }
+    @media (max-width: 767px) {
+     padding-bottom: 32px;
+     //margin-top: 36px;
     }
   }
   &__link {
