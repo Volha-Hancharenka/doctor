@@ -5,34 +5,60 @@
 @import "fonts";
 
 .page {
-  margin-top: 200px;
-  &__container {
-  }
-
-  &__section {
-    display: flex;
-    justify-content: space-between;
+  &__promo {
   }
 }
 .promo {
+  padding-top: 81px;
+  color: #263238;
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
   &__text {
-    //margin-top: 89px;
+    margin-top: 89px;
+    display: flex;
+    flex-direction: column;
+    max-width: 587px;
+    
   }
   &__bigfont {
     font-size: 64px;
+    font-weight: 700;
+    
+    span {
+      font-weight: 600;
+      color: #67c3d7;
+    }
   }
   &__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
   }
   &__item {
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__bold {
+    font-weight: 700;
   }
   &__icon {
+    padding-right: 12px;
   }
 }
 .bold {
 }
 .promo__input {
+  margin-top: 28px;
 }
 .promo__images {
+  //margin-left: 130px;
+  img {
+    width: 484px;
+    height: 586px;
+  }
 }
 /*.section {
   display: flex;
