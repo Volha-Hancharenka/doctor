@@ -138,6 +138,8 @@
   }
   @media (max-width: 767px) {
     width: 100%;
+    padding-left: 50px;
+    padding-right: 16px;
   }
 }
 .promo__images-big {
@@ -148,14 +150,14 @@
   @include adaptiveClamp("width", 484, 350, 1400, 1100, 1);
   @include adaptiveClamp("height", 566, 432, 1400, 1100, 1);
   @media (max-width: 768px) {
-    @include adaptiveClamp("height", 432, 304, 768, 425, 1);
+    
+    @include adaptiveClamp("height", 620, 304, 768, 425, 1);
   }
   @media (max-width: 980px) {
     margin-top: 57px;
   }
   @media (max-width: 767px) {
     width: 100%;
-    height: 566px;
   }
 
   img {
