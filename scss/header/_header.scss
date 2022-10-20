@@ -7,13 +7,12 @@
   z-index: 50;
   height: 80px;
   background:transparent;
-  transition: background 350ms ease-in-out, height 350ms ease-in-out;
+  transition: background 350ms ease-in-out;
   @media (max-width: 767px) {
     height: 56px;
   }
   &.sticky {
-    background: linear-gradient(180deg, #f7fffe 0%, #ffffff 60%);
-    height: 56px;
+    background: #fff;
     box-shadow: 0 2px 15px rgba(#000, 5%);
   }
   &.active {
