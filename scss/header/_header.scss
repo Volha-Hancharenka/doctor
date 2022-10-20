@@ -5,6 +5,15 @@
   top: 0;
   left: 0;
   z-index: 50;
+  height: 80px;
+  @media (max-width: 767px) {
+    height: 56px;
+  }
+  &.sticky {
+    background: linear-gradient(180deg, #f7fffe 0%, #ffffff 60%);
+    height: 56px;
+    box-shadow: 0 2px 15px rgba(#000, 5%);
+  }
   &.active {
     border-bottom: none;
     &::after {
@@ -22,22 +31,16 @@
     height: 100%;
     z-index: 2;
   }
-  &.sticky {
-    background: linear-gradient(180deg, #f7fffe 0%, #ffffff 60%);
-    //height:
-    box-shadow: 0 rem(2) 15px rgba(#000, 5%);
-  }
+  
   &__container {
     max-width: 1248px;
     margin: 0 auto;
     padding: 0 24px;
-    height: 80px;
-    color: #263238;
-    @media (max-width: 767px) {
-      height: 56px;
-    }
+    
     display: flex;
     align-items: center;
+    height: 100%;
+    color: #263238;
   }
   &__menu {
     margin-left: 40px;
