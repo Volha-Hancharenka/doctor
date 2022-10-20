@@ -9,11 +9,11 @@
   @media (max-width: 767px) {
     position: fixed;
     top: -100%;
-    left : 0;
+    left: 0;
     width: 100%;
     height: 100%;
     padding: 100px 20px;
-    background: linear-gradient(180deg, #E4F5F2 0%, #FFFFFF 61.81%);
+    background: linear-gradient(180deg, #e4f5f2 0%, #ffffff 61.81%);
     flex-direction: column;
     align-items: flex-start;
     overflow: auto;
@@ -21,6 +21,7 @@
   }
   &.active {
     top: 0;
+    //transition: flex 0.35s ease-in-out;
   }
   &__list {
     display: flex;
@@ -37,9 +38,8 @@
       padding-right: 18px;
     }
     @media (max-width: 767px) {
-     padding-bottom: 32px;
-     font-weight: 600;
-     //margin-top: 36px;
+      padding-bottom: 32px;
+      font-weight: 600;    
     }
   }
   &__link {
@@ -65,7 +65,10 @@
     transition: all 0.3s ease 0s;
     &:hover {
       border: 1px solid #242425;
-      transition: border 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+    @media (max-width: 800px) {
+      width: 150px;
     }
     @media (max-width: 767px) {
       margin-right: auto;

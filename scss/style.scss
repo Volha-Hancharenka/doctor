@@ -4,9 +4,35 @@
 @import "header/burger";
 @import "fonts";
 
-
-.section {
+.page {
   margin-top: 200px;
+  &__container {
+  }
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.promo {
+  &__text {
+    //margin-top: 89px;
+  }
+  &__bigfont {
+    font-size: 64px;
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__icon {
+  }
+}
+.bold {
+}
+.promo__input {
+}
+.promo__images {
 }
 /*.section {
   display: flex;
