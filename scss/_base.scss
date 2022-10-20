@@ -60,18 +60,13 @@ body {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  margin: 0 auto;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #e4f5f2 0%, #ffffff 61.81%);
 }
-
-
 
 [class*="__container"] {
   max-width: 1248px;
   margin: 0 auto;
   padding: 0 24px;
-  height: 100%;
 }
