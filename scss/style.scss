@@ -168,9 +168,13 @@
     width: 100%;
     padding-left: 72px;
     padding-right: 50px;
-    
+    @include adaptiveClamp ("padding-left", 72, 52, 980, 425, 1);
+    @include adaptiveClamp ("padding-right", 50, 15, 980, 425, 1);
   }
- 
+  @media (max-width: 350px) {
+    padding-left: 20px;
+    padding-right: 15px;
+  }
   @media (max-width: 768px) {
     width: 100%;
     
@@ -199,7 +203,7 @@
   @include adaptiveClamp("height", 566, 432, 1200, 1000, 1);
   @media (max-width: 980px) {
     width: 100%;
-    @include adaptiveClamp("height", 566, 304, 980, 320, 1);
+    @include adaptiveClamp("height", 900, 304, 980, 425, 1);
   }
   /*@media (max-width: 980px) {
     @include adaptiveClamp("width", 484, 260, 980, 320, 1);
@@ -231,7 +235,7 @@
   @include adaptiveClamp ("width", 204, 110);
   @include adaptiveClamp ("height", 76, 41);
   @media (max-width: 980px) {
-    left: 20px;
+    left: 6px;
     //width: 109px;
     //height: 41px;
   }
@@ -269,7 +273,7 @@
   @include adaptiveClamp ("width", 203, 109);
   @include adaptiveClamp ("height", 76, 41);
   @media (max-width: 980px) {
-    right: 0;
+    right: -7px;
   }
 
   img {
