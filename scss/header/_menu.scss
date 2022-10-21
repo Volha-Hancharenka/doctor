@@ -21,7 +21,6 @@
   }
   &.active {
     top: 0;
-    //transition: flex 0.35s ease-in-out;
   }
   &__list {
     display: flex;
@@ -75,7 +74,6 @@
       margin-left: 0;
       width: 100%;
     }
-
     &_text {
       margin-right: 10px;
       font-weight: 600;
