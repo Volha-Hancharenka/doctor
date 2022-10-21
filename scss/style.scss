@@ -215,6 +215,8 @@
   left: prc(-87, 484);
   width: 42%;
   height: 13%;
+  @include adaptiveClamp ("width", 204, 110);
+  @include adaptiveClamp ("height", 76, 41);
   @media (max-width: 768px) {
     left: 20px;
     //width: 109px;
@@ -251,6 +253,8 @@
   right: prc(-41, 484);
   width: 42%;
   height: 13%;
+  @include adaptiveClamp ("width", 203, 109);
+  @include adaptiveClamp ("height", 76, 41);
   @media (max-width: 768px) {
     right: 0;
   }
@@ -271,6 +275,8 @@
   left: prc(-110, 484);
   width: 69%;
   height: 15%;
+  @include adaptiveClamp ("width", 343, 184);
+  @include adaptiveClamp ("height", 86, 47);
   @media (max-width: 768px) {
     left: 0;
   }
