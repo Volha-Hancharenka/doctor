@@ -215,6 +215,18 @@
   left: prc(-87, 484);
   width: 42%;
   height: 13%;
+  @media (max-width: 768px) {
+    left: 20px;
+    //width: 109px;
+    //height: 41px;
+  }
+  
+  /*@media (max-width: 768px) {
+    top: prc(56, 596);
+  left: prc(-87, 618);
+  width: 42%;
+  height: 13%;
+  }*/
  
   
   /*@media (max-width: 768px) {
@@ -239,6 +251,9 @@
   right: prc(-41, 484);
   width: 42%;
   height: 13%;
+  @media (max-width: 768px) {
+    right: 0;
+  }
 
   img {
     position: absolute;
@@ -256,6 +271,9 @@
   left: prc(-110, 484);
   width: 69%;
   height: 15%;
+  @media (max-width: 768px) {
+    left: 0;
+  }
 
   img {
     position: absolute;
