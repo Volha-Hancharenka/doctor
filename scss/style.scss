@@ -35,16 +35,23 @@
     }
   }
   &__title {
-    font-size: 64px;
-    @include adaptiveClamp("font-size", 64, 40, 1200, 800, 1);
-    font-weight: 700;
-    max-width: 587px;
-    @media (max-width: 980px) {
-      text-align: center;
+    h1{
+      font-size: 64px;
+      @include adaptiveClamp("font-size", 64, 40, 1200, 800, 1);
+      font-weight: 700;
+      max-width: 587px;
+      @media (max-width: 980px) {
+        text-align: center;
+        max-width: 100%;
+      }
+      @media (max-width: 1120px) {
+        max-width: 540px;
+      }
+      @media (max-width: 500px) {
+        text-align: start;
+      }
     }
-    @media (max-width: 500px) {
-      text-align: start;
-    }
+    
     span {
       font-weight: 600;
       color: #67c3d7;
@@ -189,15 +196,22 @@
   width: 484px;
   height: 566px;
   overflow: hidden;
-  @include adaptiveClamp("width", 484, 350, 1200, 1100, 1);
-  @include adaptiveClamp("height", 566, 432, 1200, 1100, 1);
-  @media (max-width: 768px) {
-    @include adaptiveClamp("height", 620, 304, 768, 425, 1);
+  @include adaptiveClamp("width", 484, 350, 1200, 1000, 1);
+  @include adaptiveClamp("height", 566, 432, 1200, 1000, 1);
+  @media (max-width: 980px) {
+    max-width: 100%;
+    @include adaptiveClamp("height", 566, 304, 980, 320, 1);
   }
-  
+  /*@media (max-width: 980px) {
+    @include adaptiveClamp("width", 484, 260, 980, 320, 1);
+  @include adaptiveClamp("height", 566, 304, 980, 320, 1);
+  }
   @media (max-width: 768px) {
     width: 100%;
   }
+  @media (max-width: 768px) {
+    @include adaptiveClamp("height", 620, 304, 768, 425, 1);
+  }*/
 
   img {
     position: absolute;
