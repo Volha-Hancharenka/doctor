@@ -30,7 +30,6 @@
     }
   }
   &__item {
-    position: relative;
     padding-right: 40px;
     font-weight: 500;
     @media (max-width: 970px) {
@@ -42,7 +41,6 @@
     }
   }
   &__link {
-    position: relative;
     color: #263238;
     &:hover {
       color: darken(#242425, 100%);
@@ -70,8 +68,6 @@
       width: 150px;
     }
     @media (max-width: 767px) {
-      margin-right: auto;
-      margin-left: 0;
       width: 100%;
     }
     &_text {
