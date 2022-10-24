@@ -26,16 +26,15 @@
   &__promo {
   }
 }
+
 .page__features {
   background: linear-gradient(90deg, #e8fffb 0%, #ffffff 100%);
   position: relative;
-  
 }
 .features {
   &__container {
     display: flex;
     flex-direction: column;
-    
   }
   &__title {
     text-align: center;
@@ -56,27 +55,25 @@
       width: 100%;
       height: 265px;
       background: #ffffff;
-      z-index: -1;
+      @media (max-width: 767px) {
+        height: 164px;
+      }
     }
-  }
-  &__chapters {
-  }
-}
-.title {
-  &__neem {
-    position: relative;
-    padding-bottom: 12px;
-    @media (max-width: 500px) {
-      padding-bottom: 8px;
+    &_neem {
+      position: relative;
+      padding-bottom: 12px;
+      @media (max-width: 500px) {
+        padding-bottom: 8px;
+      }
     }
-  }
-  h2 {
-    position: relative;
-    font-size: 64px;
-    line-height: 77px;
-    padding-bottom: 80px;
-    @include adaptiveClamp("font-size", 64, 28, 980, 500, 1);
-    @include adaptiveClamp("line-height", 77, 34, 980, 500, 1);
+    &_big-title {
+      position: relative;
+      font-size: 64px;
+      line-height: 77px;
+      padding-bottom: 80px;
+      @include adaptiveClamp("font-size", 64, 28, 980, 500, 1);
+      @include adaptiveClamp("line-height", 77, 34, 980, 500, 1);
+    }
   }
 }
 .chapter {
@@ -99,6 +96,13 @@
         align-items: center;
       }
     }
+    &_type-text {
+      font-weight: 700;
+      font-size: 20px;
+      color: #101859;
+      padding-left: 12px;
+      align-items: center;
+    }
     &_title {
       font-weight: 700;
       font-size: 32px;
@@ -116,26 +120,16 @@
   }
 }
 
-.type {
-  font-weight: 700;
-  font-size: 20px;
-  color: #101859;
-  padding-left: 12px;
-  align-items: center;
-}
-
 .chapter__image {
   position: relative;
-  
 }
 .chapter__image_big {
-  
   width: 521px;
   height: 536px;
   overflow: hidden;
   width: 100%;
-  @include adaptiveClamp ("width", 521, 400, 1440, 980,1);
-  @include adaptiveClamp ("height", 536, 415, 1440, 980,1);
+  @include adaptiveClamp("width", 521, 400, 1440, 980, 1);
+  @include adaptiveClamp("height", 536, 415, 1440, 980, 1);
   img {
     width: 100%;
     height: 100%;
@@ -146,5 +140,5 @@
     
     object-fit: cover;
   }*/
-}
+  }
 }
