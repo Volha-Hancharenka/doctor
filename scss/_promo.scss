@@ -1,6 +1,7 @@
 .promo {
   padding-top: 80px;
   color: #263238;
+  background: linear-gradient(180deg, #E4F5F2 0%, #FFFFFF 61.81%);
   &__container {
     display: flex;
     @media (max-width: 980px) {
@@ -28,9 +29,11 @@
       @media (max-width: 980px) {
         text-align: center;
         max-width: 527px;
+        line-height: 48px;
       }
       @media (max-width: 500px) {
         text-align: start;
+        
       }
     span {
       font-weight: 600;
@@ -137,7 +140,7 @@
   &__images {
     position: relative;
     flex: 1 0;
-    margin-bottom: 100px;
+    
     @media (max-width: 980px) {
       margin-top: 57px;
       width: 100%;
@@ -152,7 +155,7 @@
     }
     @media (max-width: 768px) {
       width: 100%;
-      margin-bottom: 60px;
+      
     }
   }
   &__images-big {

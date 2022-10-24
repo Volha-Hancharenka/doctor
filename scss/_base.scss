@@ -70,4 +70,17 @@ body {
   margin: 0 auto;
   padding: 0 24px;
 }
-
+[class*=".neem"] {
+  color: #67c3d7;
+  font-weight: 700;
+  padding-bottom: 8px;
+  
+}
+[class*=".big__title"] {
+  color: #263238;
+  font-weight: 700;
+  font-size: 54px;
+  padding-bottom: 24px;
+  line-height: 65px;
+  
+}
