@@ -53,6 +53,12 @@
   padding: 24px 20px;
   width: 381px;
   height: 164px;
+  @media (max-width: 980px) {
+  width: 100%;
+  height: 100%;
+  
+  }
+  @include adaptiveClamp("width", 381, 300, 425, 320, 1);
 
   @media (max-width: 1160px) {
     padding: 14px 10px;
@@ -69,6 +75,10 @@
   flex-direction: column;
   max-width: 269px;
   padding-left: 12px;
+  @media (max-width: 980px) {
+    width: 100%;
+    //height: 100%;
+    }
 }
 .text__quote {
   color: #5e676b;
