@@ -48,7 +48,7 @@
       max-width: 327px;
       padding-bottom: 40px;
     }
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       top: 0;
@@ -64,12 +64,14 @@
 }
 .title {
   &__neem {
+    position: relative;
     padding-bottom: 12px;
     @media (max-width: 500px) {
       padding-bottom: 8px;
     }
   }
   h2 {
+    position: relative;
     font-size: 64px;
     line-height: 77px;
     padding-bottom: 80px;
@@ -123,6 +125,26 @@
 }
 
 .chapter__image {
+  position: relative;
+  
 }
 .chapter__image_big {
+  
+  width: 521px;
+  height: 536px;
+  overflow: hidden;
+  width: 100%;
+  @include adaptiveClamp ("width", 521, 400, 1440, 980,1);
+  @include adaptiveClamp ("height", 536, 415, 1440, 980,1);
+  img {
+    width: 100%;
+    height: 100%;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    object-fit: cover;
+  }*/
+}
 }
