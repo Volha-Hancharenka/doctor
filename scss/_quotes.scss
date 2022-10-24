@@ -1,7 +1,7 @@
 .page__quotes {
-  margin-bottom: 100px;
-  @media (max-width: 980px) {
-    margin-bottom: 60px;
+  padding-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
   }
 }
 .quotes {
@@ -9,9 +9,8 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(100, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 28px;
-    
     @media (max-width: 767px) {
       gap: 16px;
     }
@@ -22,7 +21,7 @@
     border: 1px solid #d9dbdf;
     border-radius: 4px;
     padding: 24px 20px;
-    width: 381px;
+    width: 100%;
     height: 100%;
     @media (max-width: 1160px) {
       padding: 14px 10px;
@@ -31,41 +30,6 @@
       width: 100%;
     }
   }
-
- /* &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 28px;
-    row-gap: 28px;
-    @media (max-width: 980px) {
-      row-gap: 32px;
-      flex-wrap: wrap;
-    }
-    @media (max-width: 767px) {
-      row-gap: 16px;
-    }
-  }
-  &__block {
-    display: flex;
-    position: relative;
-    border: 1px solid #d9dbdf;
-    border-radius: 4px;
-    padding: 24px 20px;
-    width: 381px;
-    height: 100%;
-    @include adaptiveClamp("width", 381, 100, 1300, 1000, 1);
-    @media (max-width: 980px) {
-      width: 100%;
-    }
-    @include adaptiveClamp("width", 381, 300, 425, 320, 1);
-    @media (max-width: 1160px) {
-      padding: 14px 10px;
-    }
-    @media (max-width: 600px) {
-      width: 100%;
-    }
-  }*/
   &__text {
   }
   &__icon {
@@ -93,15 +57,27 @@
     color: #5e676b;
     font-weight: 400;
     padding-bottom: 10px;
+    line-height: 22px;
+    @media (max-width: 500px) {
+      line-height: 20px;
+      font-size: 14px;
+      padding-bottom: 12px;
+    }
   }
   &__doctor {
     font-weight: 500;
     color: #101859;
     padding-bottom: 4px;
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
   }
   &__clinic {
     font-size: 14px;
     font-weight: 400;
     color: #9192a1;
+    @media (max-width: 500px) {
+      font-size: 12px;
+    }
   }
 }
