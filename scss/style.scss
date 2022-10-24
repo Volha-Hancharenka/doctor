@@ -8,6 +8,7 @@
 @import "config/variables";
 @import "config/mixins";
 @import "promo";
+@import "quotes";
 @import "careers/careers";
 
 .page {
@@ -24,87 +25,4 @@
   &__promo {
   }
 }
-.page__quotes {
-  margin-bottom: 100px;
-  @media (max-width: 980px) {
-    margin-bottom: 60px;
-  }
 
-  .quotes {
-    //width: 300px;
-  }
-}
-.quotes__container {
-  display: flex;
-  justify-content: space-between;
-  @media (max-width: 980px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 16px;
-  }
-}
-.quotes__block {
-  display: flex;
-  //justify-content: space-between;
-  position: relative;
-  border: 1px solid #d9dbdf;
-  border-radius: 4px;
-  padding: 24px 20px;
-  width: 381px;
-  height: 164px;
-  @media (max-width: 980px) {
-  width: 100%;
-  height: 100%;
-  
-  }
-  @include adaptiveClamp("width", 381, 300, 425, 320, 1);
-
-  @media (max-width: 1160px) {
-    padding: 14px 10px;
-  }
-  @media (max-width: 980px) {
-    justify-content: center;
-  }
-}
-
-.quotes__text {
-}
-.text {
-  display: flex;
-  flex-direction: column;
-  max-width: 269px;
-  padding-left: 12px;
-  @media (max-width: 980px) {
-    width: 100%;
-    //height: 100%;
-    }
-}
-.text__quote {
-  color: #5e676b;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
-.text__doctor {
-  font-weight: 500;
-  color: #101859;
-  padding-bottom: 4px;
-}
-
-.text__clinic {
-  font-size: 14px;
-  font-weight: 400;
-  color: #9192a1;
-}
-.quotes__icon {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding-bottom: 18px;
-  padding-right: 13px;
-  @media (max-width: 980px) {
-    padding-bottom: 16px;
-    padding-right: 16px;
-  }
-}
