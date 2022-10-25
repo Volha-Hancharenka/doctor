@@ -90,16 +90,16 @@
         padding-bottom: 16px;
       }
     }
-    &__text_text {
-      color: #5e676b;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 30px;
-      @media (max-width: 500px) {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 21px;
-      }
+  }
+  &__text_text {
+    color: #5e676b;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    @media (max-width: 500px) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
     }
   }
 }
