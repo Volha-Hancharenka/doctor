@@ -61,6 +61,22 @@
     }
   }
 }
+.title {
+  &__text-decor_features {
+    position: relative;
+    padding-bottom: 12px;
+    @media (max-width: 500px) {
+      padding-bottom: 8px;
+    }
+  }
+  &__big-title_features {
+    position: relative;
+    padding-bottom: 80px;
+    @include adaptiveClamp("font-size", 64, 28, 980, 500, 1);
+    @include adaptiveClamp("line-height", 77, 34, 980, 500, 1);
+  }
+}
+
 .chapter {
   &__block_one {
   }
@@ -154,7 +170,6 @@
   }
 }
 
-
 .chapter__image {
   position: relative;
   flex: 0 1;
@@ -174,7 +189,7 @@
       //height: 1000px;
       @include adaptiveClamp("height", 1000, 336, 980, 375, 1);
     }
-    
+
     //width: 100%;
     //@include adaptiveClamp("width", 521, 400, 1440, 980, 1);
     //@include adaptiveClamp("height", 536, 415, 1440, 980, 1);
