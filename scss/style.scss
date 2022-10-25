@@ -29,6 +29,9 @@
 .page__features {
   background: linear-gradient(90deg, #e8fffb 0%, #ffffff 100%);
   position: relative;
+  @media (max-width: 767px) {
+    background: #ffffff;
+  }
 }
 .features {
   &__container {
@@ -73,6 +76,7 @@
     padding-bottom: 80px;
     @include adaptiveClamp("font-size", 64, 28, 980, 500, 1);
     @include adaptiveClamp("line-height", 77, 34, 980, 500, 1);
+    
   }
 }
 .chapter {
@@ -86,9 +90,10 @@
     @media (max-width: 980px) {
       flex-direction: column;
     }
-    @media (max-width: 767px) {
-      padding-top: 24px;
+    @media (max-width: 980px) {
+      padding-top: 80px;
     }
+    
   }
   &__text {
     display: flex;
@@ -179,6 +184,9 @@
   @media (max-width: 767px) {
     padding-right: 0;
     padding-left: 0;
+    padding-top: 24px;
+    background: linear-gradient(90deg, #E8FFFB 0%, #FFFFFF 100%);
+
   }
   &_big {
     position: relative;
