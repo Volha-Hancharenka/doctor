@@ -105,6 +105,9 @@
       font-size: 14px;
       line-height: 18px;
       color: #5e676b;
+      background: url(./../images/body/pricing/icon.svg) left no-repeat;
+      padding-left: 32px;
+     
     }
   }
   &__button {
@@ -116,7 +119,7 @@
     font-weight: 700;
     font-size: 14px;
     background-color: inherit;
-    
+
     :hover {
       background-color: #101859;
       color: #ffffff;
