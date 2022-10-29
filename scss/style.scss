@@ -52,14 +52,29 @@
     height: 709px;
     border: 1px solid #d9dbdf;
     border-radius: 12px;
-    margin-right: 96px;
-    margin-left: 96px;
   }
   &__section {
     display: flex;
     flex-direction: column;
     padding: 92px 24px 40px 24px;
     max-width: 400px;
+  }
+  &__section-medium {
+    position: relative;
+    background-color: #ecf1ff;
+    :before {
+      content: 'Best offer';
+      position: absolute;
+      top:0;
+      left:0;
+      right: 0;
+      background-color: #3B7DFF;
+      color: #ECF1FF;
+      height: 32px;
+      padding-top: 7.5px;
+      font-weight: 700;
+      font-size: 14px;
+    }
   }
   &__item {
     display: flex;
@@ -99,7 +114,7 @@
     flex-direction: column;
     gap: 13px;
     padding-top: 40px;
-    padding-bottom: 151px;
+    //padding-bottom: 151px;
     li {
       font-weight: 500;
       font-size: 14px;
@@ -107,7 +122,6 @@
       color: #5e676b;
       background: url(./../images/body/pricing/icon.svg) left no-repeat;
       padding-left: 32px;
-     
     }
   }
   &__button {
@@ -119,10 +133,17 @@
     font-weight: 700;
     font-size: 14px;
     background-color: inherit;
-
     :hover {
       background-color: #101859;
       color: #ffffff;
+    }
+  }
+  &__button-medium {
+    background-color:#101859;
+    color: #ffffff;
+    :hover {
+      background-color: #ffffff;
+      color: #101859;
     }
   }
 }
