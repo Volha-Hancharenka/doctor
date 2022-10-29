@@ -27,4 +27,16 @@
   &__promo {
   }
 }
-
+.page__pricing {
+}
+.price {
+  padding-top: 100px;
+  &__container {
+  }
+  &__title {
+    padding-bottom: 80px;
+  @media (max-width: 500px) {
+    padding-bottom: 24px;
+  }
+  }
+}

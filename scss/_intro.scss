@@ -74,6 +74,12 @@
     &_intro {
       padding-bottom: 8px;
     }
+    &_price {
+      padding-bottom: 12px;
+      @media (max-width: 500px) {
+        padding-bottom: 8px;
+      }
+    }
   }
   &__big-title {
     color: #263238;
@@ -89,6 +95,10 @@
       @media (max-width: 500px) {
         padding-bottom: 16px;
       }
+    }
+    &_price {
+      @include adaptiveClamp("font-size", 64, 28, 980, 500, 1);
+      @include adaptiveClamp("line-height", 77, 34, 980, 500, 1);
     }
   }
   &__text_text {
