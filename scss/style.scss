@@ -86,7 +86,6 @@
     }
     @media (max-width: 500px) {
       max-width: 327px;
-      //padding-bottom: 40px;
     }
   }
 }
@@ -109,25 +108,34 @@
   }
 }
 .item {
+  padding-top: 80px;
+    padding-bottom: 80px;
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: 500px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  
   &_modern {
     background: linear-gradient(90deg, #e8fffb 0%, #ffffff 100%);
+    
+    
   }
-  &__chapter {
+  &_simple {
+    background: linear-gradient(90deg, #E5EEFF 0%, #FFFFFF 100%);
+   
   }
-  &__block {
+  &__container {
     flex: 1 0 100%;
-    padding-top: 80px;
-    padding-bottom: 0;
+    
     display: flex;
     @media (max-width: 980px) {
       flex-direction: column;
     }
-    @media (max-width: 767px) {
-      padding-top: 40px;
-    }
-    @media (max-width: 500px) {
-      padding-top: 24px;
-    }
+    
   }
   &__text {
     display: flex;
@@ -146,7 +154,19 @@
     @media (max-width: 767px) {
       justify-content: flex-start;
       align-items: flex-start;
-      //background-color: #fff;
+
+      
+    }
+    &_simple {
+      padding-left: 0;
+      padding-right: 72px;
+      @media (max-width: 980px) {
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 24px;
+        
+      }
+     
     }
 
     &_type {
@@ -167,6 +187,7 @@
       font-size: 20px;
       color: #101859;
       padding-left: 12px;
+      text-transform: uppercase;
       @media (max-width: 500px) {
         font-size: 16px;
       }
@@ -187,6 +208,7 @@
       font-size: 20px;
       line-height: 30px;
       color: #5e676b;
+     
       @media (max-width: 980px) {
         text-align: center;
       }
@@ -268,6 +290,26 @@
         left: 50%;
         transform: translate(-50%, -50%);
         object-fit: cover;
+      }
+    }
+    &_label-simple {
+      position: absolute;
+      bottom: prc(-36, 521);
+      left: prc(-36, 521);
+      width: 264px;
+      height: 197px;
+      @include adaptiveClamp("width", 264, 214, 1200, 1000, 1);
+      @include adaptiveClamp("height", 197, 150, 1200, 1000, 1);
+      @media (max-width: 980px) {
+        bottom: prc(-12, 886);
+        left: prc(-12, 886);
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        @include adaptiveClamp("width", 264, 200, 767, 450, 1);
+        @include adaptiveClamp("height", 197, 133, 767, 450, 1);
+        @include adaptiveClamp("width", 200, 0, 450, 0, 1);
+        @include adaptiveClamp("height", 133, 0, 450, 0, 1);
       }
     }
   }
