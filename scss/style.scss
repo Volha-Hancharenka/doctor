@@ -145,6 +145,10 @@
       @media (max-width: 500px) {
         font-size: 14px;
         line-height: 18px;
+        
+      }
+      @media (max-width: 370px) {
+        padding: 12px 6px;
       }
     }
     textarea {
@@ -154,28 +158,29 @@
       display: flex;
       column-gap: 24px;
     }
-    &_five {
+    &_label {
       display: flex;
       column-gap: 8px;
       max-width: 357px;
       align-items: center;
       //padding: 3px;
-
       input {
         width: 18px;
         height: 18px;
       }
-      span {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 18px;
-        @media (max-width: 500px) {
-          font-size: 12px;
-          line-height: 16px;
-        }
+    }
+    &_checkbox {}
+    &_text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      @media (max-width: 500px) {
+        font-size: 12px;
+        line-height: 16px;
       }
     }
   }
+
   button {
     font-weight: 700;
     line-height: 19px;
