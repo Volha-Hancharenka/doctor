@@ -34,11 +34,24 @@
   &__container {
     display: flex;
     padding-bottom: 100px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    @media (max-width: 500px) {
+      padding-bottom: 48px;
+    }
   }
   &__image {
     position: relative;
     width: 614px;
     height: 670px;
+    @media (max-width: 980px) {
+      flex: 40%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      flex: none;
+    }
     h2 {
       position: absolute;
       bottom: 56px;
@@ -48,6 +61,23 @@
       line-height: 67px;
       color: #ffffff;
       max-width: 420px;
+      @media (max-width: 980px) {
+        font-size: 30px;
+        line-height: 37px;
+        left: 26px;
+        max-width: 220px;
+      }
+      @media (max-width: 768px) {
+        font-size: 56px;
+        line-height: 67px;
+        left: 56px;
+        max-width: 420px;
+
+        @include adaptiveClamp("font-size", 56, 36, 768, 425, 1);
+        @include adaptiveClamp("line-height", 67, 43, 768, 425, 1);
+        @include adaptiveClamp("left", 56, 24, 768, 425, 1);
+        @include adaptiveClamp("bottom", 56, 24, 768, 425, 1);
+      }
     }
   }
 
@@ -65,16 +95,30 @@
     position: absolute;
     top: 40px;
     left: 40px;
+    @media (max-width: 980px) {
+      left: 26px;
+    }
+    @media (max-width: 768px) {
+      left: 40px;
+      @include adaptiveClamp("top", 40, 24, 768, 425, 1);
+      @include adaptiveClamp("left", 40, 24, 768, 425, 1);
+    }
   }
 }
 .contact__form {
   background-color: #f5f9ff;
   padding: 48px 46px;
+  @media (max-width: 500px) {
+    padding: 24px 24px;
+  }
 }
 .form {
   display: flex;
   flex-direction: column;
   width: 586px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   &__title {
     font-weight: 700;
@@ -88,7 +132,7 @@
     padding-bottom: 24px;
     input,
     textarea {
-      max-width: 494px;
+      max-width: 100%;
       width: 100%;
       height: 48px;
       padding: 12px 24px;
@@ -96,8 +140,12 @@
       font-size: 16px;
       line-height: 21px;
       color: #9192a1;
-      border: 1px solid #D9DBDF;
+      border: 1px solid #d9dbdf;
       border-radius: 2px;
+      @media (max-width: 500px) {
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
     textarea {
       height: 160px;
@@ -111,6 +159,7 @@
       column-gap: 8px;
       max-width: 357px;
       align-items: center;
+      //padding: 3px;
 
       input {
         width: 18px;
@@ -120,13 +169,17 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
+        @media (max-width: 500px) {
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
     }
   }
   button {
     font-weight: 700;
     line-height: 19px;
-    padding: 0;
+
     text-align: center;
     max-width: 494px;
     width: 100%;
@@ -136,11 +189,15 @@
     background-color: #101859;
     transition: all 0.3s ease;
     border-radius: 2px;
+    @media (max-width: 500px) {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 600;
+    }
     &:hover {
       color: #101859;
       background-color: #ffffff;
       border: 1px solid #101859;
-      
     }
   }
 }
