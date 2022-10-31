@@ -165,15 +165,35 @@
       align-items: center;
       //padding: 3px;
       input {
-        width: 18px;
-        height: 18px;
+        display: none;
+        
       }
     }
-    &_checkbox {}
+    &_checkbox {
+      display: block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #C7CDDF;
+      border-radius: 2px;
+      & svg {
+        display: none;
+        
+      }
+      &:hover {
+        border: 1px solid #101859;
+        & svg {
+         display: block;
+         padding-left: 3px;
+         padding-top: 3px;
+        }
+      }
+
+    }
     &_text {
       font-weight: 500;
       font-size: 14px;
       line-height: 18px;
+      color: #212121;
       @media (max-width: 500px) {
         font-size: 12px;
         line-height: 16px;
