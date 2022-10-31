@@ -82,9 +82,9 @@
     line-height: 39px;
     padding-bottom: 40px;
   }
-  &__item {
-  }
   &__list {
+  }
+  &__item {
     padding-bottom: 24px;
     input,
     textarea {
@@ -96,6 +96,8 @@
       font-size: 16px;
       line-height: 21px;
       color: #9192a1;
+      border: 1px solid #D9DBDF;
+      border-radius: 2px;
     }
     textarea {
       height: 160px;
@@ -111,9 +113,8 @@
       align-items: center;
 
       input {
-        width: 24px;
-        height: 24px;
-        //padding: 0;
+        width: 18px;
+        height: 18px;
       }
       span {
         font-weight: 500;
