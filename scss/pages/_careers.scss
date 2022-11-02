@@ -1,0 +1,60 @@
+.career {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding-top: 80px;
+
+  &__start {
+    padding-top: 100px;
+    background-color: #e4f5f2;
+  }
+
+  &__cards {
+  }
+
+  &__end {
+  }
+}
+.start {
+  &__container {
+  }
+
+  &__title {
+  }
+}
+.cards {
+  &__container {
+  }
+
+  &__block {
+  }
+
+  &__title {
+  }
+
+  &__columns {
+  }
+
+  &__text {
+  }
+
+  &__btn {
+  }
+}
+.column {
+  &__list {
+  }
+
+  &__item {
+  }
+}
+.end {
+  &__container {
+  }
+
+  &__title {
+  }
+
+  &__btn {
+  }
+}
