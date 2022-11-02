@@ -16,7 +16,7 @@
 @import "careers/careers";
 
 .page {
-  background: linear-gradient(180deg, #e4f5f2 0%, #ffffff 61.81%);
+  
   flex: 1 1 auto;
   [data-observ] {
     position: absolute;
@@ -27,6 +27,7 @@
     background: transparent;
   }
   &__promo {
+    background: linear-gradient(180deg, #e4f5f2 0%, #ffffff 61.81%);
   }
 }
 .footer {
@@ -181,3 +182,35 @@
     margin-top: 31px;
   }
 }
+#intro::before {
+  content: '';
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}
+#features {
+  position: relative; 
+	border-top: 100px solid transparent;
+	margin-top: -100px;
+}
+#features::before {
+  content: '';
+  position: absolute;
+	top: -2px; 
+	left: 0;
+	right: 0;
+	//border-top: 2px solid #ccc;
+}
+#pricing {
+  position: relative; 
+	border-top: 20px solid transparent;
+	margin-top: -20px;
+}
+#pricing::before {
+  content: '';
+  position: absolute;
+	top: -2px; 
+	left: 0;
+	right: 0;
+}
+
