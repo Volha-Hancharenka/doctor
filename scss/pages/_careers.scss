@@ -12,10 +12,16 @@
       padding-top: 32px;
       padding-bottom: 189px;
     }
-    position: relative;
+    //position: relative;
   }
 
   &__cards {
+    position: relative;
+  
+    top: -130px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
     
   }
 
@@ -62,11 +68,7 @@
   }
 }
 .cards {
-  position: absolute;
-    top: 459px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
+  
  
     //max-width: 1044px;
   &__container {
