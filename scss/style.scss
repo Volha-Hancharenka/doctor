@@ -14,6 +14,7 @@
 @import "price";
 @import "contact";
 @import "pages/careers";
+@import "pages/team";
 
 .page {
   
@@ -77,6 +78,10 @@
   &__item {
     &_bold {
       padding-bottom: 4px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      color: #ffffff;
     }
   }
   &__link {
@@ -84,12 +89,10 @@
     font-weight: 500;
     line-height: 19px;
     color: #8797a0;
-    &_bold {
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 19px;
-      color: #ffffff;
+    &:hover, &:focus {
+      color: red;
     }
+    
   }
   &__row {
   }

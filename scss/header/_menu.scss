@@ -42,8 +42,8 @@
   }
   &__link {
     color: #263238;
-    &:hover {
-      color: darken(#242425, 100%);
+    &:hover, &:focus {
+      color: red;
     }
   }
   &__started {
