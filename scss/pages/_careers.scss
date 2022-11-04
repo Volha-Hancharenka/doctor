@@ -196,24 +196,27 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-   max-width: 1200px;
+    max-width: 1200px;
     align-items: center;
     padding-top: 63px;
     padding-bottom: 63px;
     position: relative;
+    @media (max-width: 768px) {
+      padding: 24px;
+    }
   }
 
   &__first-image {
     position: absolute;
     top: 0;
     left: 0;
+    
   }
   &__second-image {
     position: absolute;
     bottom: 0;
     right: 0;
-   
-   
+    
   }
 
   &__title {
@@ -222,6 +225,8 @@
     line-height: 62px;
     color: #fff;
     max-width: 887px;
+    @include adaptiveClamp("font-size", 48, 22, 768, 320, 1);
+    @include adaptiveClamp("line-height", 62, 28, 768, 320, 1);
   }
 
   &__btn {
@@ -239,5 +244,13 @@
       color: #fff;
       border: 1px solid #fff;
     }
+    @media (max-width: 768px) {
+      margin-top: 24px;
+    }
+    @media (max-width: 500px) {
+      font-size: 12px;
+    }
+    @include adaptiveClamp("width", 230, 110, 768, 425, 1);
+    @include adaptiveClamp("height", 48, 38, 768, 425, 1);
   }
 }
