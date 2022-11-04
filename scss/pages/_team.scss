@@ -1,0 +1,256 @@
+.page {
+  &__team {
+    margin-bottom: 120px;
+    @media (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+  }
+}
+.team {
+  &__title {
+    padding-top: 180px;
+    padding-bottom: 400px;
+    background-color: #e4f5f2;
+    @media (max-width: 767px) {
+      padding-top: 95px;
+      padding-bottom: 234px;
+    }
+  }
+
+  &__story {
+    position: relative;
+    margin-top: -300px;
+    @media (max-width: 767px) {
+      margin-top: -214px;
+    }
+  }
+  &__values {
+    padding-top: 120px;
+    @media (max-width: 767px) {
+      padding-top: 60px;
+    }
+  }
+  &__people {
+    margin-top: 120px;
+    @media (max-width: 767px) {
+      marging-top: 60px;
+    }
+  }
+}
+.title-team {
+  &__container {
+    h1 {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 77px;
+      color: #101859;
+      text-align: center;
+      @include adaptiveClamp("font-size", 64, 36, 767, 425, 1);
+      @include adaptiveClamp("line-height", 77, 43, 767, 425, 1);
+    }
+  }
+}
+.story {
+  &__container {
+    display: flex;
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__text {
+    padding-right: 60px;
+    @media (max-width: 767px) {
+      padding-right: 0;
+      margin-top: 32px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    color: #101859;
+    margin-bottom: 24px;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+    @include adaptiveClamp("font-size", 32, 24, 767, 425, 1);
+    @include adaptiveClamp("line-height", 38, 28, 767, 425, 1);
+
+    &_text {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 31px;
+      color: #5e676b;
+      @include adaptiveClamp("font-size", 18, 14, 767, 425, 1);
+      @include adaptiveClamp("line-height", 31, 23, 767, 425, 1);
+      > p {
+        margin-bottom: 20px;
+        @media (max-width: 767px) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  &__image {
+  }
+}
+
+.values {
+  &__container {
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+      margin-bottom: 24px;
+    }
+  }
+  &__block {
+    display: flex;
+    column-gap: 24px;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      row-gap: 16px;
+    }
+  }
+  &__columns {
+  }
+}
+.title {
+  &__text-decor_values,
+  &__text-decor_people {
+    margin-bottom: 8px;
+    @media (max-width: 500px) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__big-title_values,
+  &__big-title_people {
+    @include adaptiveClamp("font-size", 54, 24, 767, 425, 1);
+    @include adaptiveClamp("line-height", 65, 29, 767, 425, 1);
+  }
+}
+
+.column {
+  border: 1px solid #b0b0b0;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  @media (max-width: 500px) {
+    padding: 16px;
+  }
+
+  &__image {
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #1c2147;
+    @include adaptiveClamp("font-size", 32, 20, 767, 425, 1);
+    @include adaptiveClamp("line-height", 42, 26, 767, 425, 1);
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #5e676b;
+    @include adaptiveClamp("font-size", 16, 14, 767, 425, 1);
+    @include adaptiveClamp("line-height", 24, 21, 767, 425, 1);
+  }
+}
+
+.people {
+  &__container {
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__block {
+    display: flex;
+    margin-bottom: 60px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    @media (max-width: 500px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__image {
+  }
+
+  &__column {
+    padding-left: 48px;
+    @media (max-width: 767px) {
+      padding-left: 0;
+    }
+  }
+
+  &__title-people {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      margin-top: 24px;
+    }
+
+    &_title {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        margin-bottom: 12px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        color: #1c2147;
+        @media (max-width: 500px) {
+          margin-bottom: 4px;
+        }
+        @include adaptiveClamp("font-size", 32, 20, 767, 425, 1);
+        @include adaptiveClamp("line-height", 38, 24, 767, 425, 1);
+      }
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #9192a1;
+        @include adaptiveClamp("font-size", 16, 14, 767, 425, 1);
+        @include adaptiveClamp("line-height", 24, 21, 767, 425, 1);
+      }
+    }
+
+    &_icon {
+      align-self: center;
+    }
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #5e676b;
+   
+  }
+}
+
+.icon-linkdelin {
+  margin-right: 8px;
+}
+.icon-twitter {
+}
