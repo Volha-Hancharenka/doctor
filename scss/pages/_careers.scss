@@ -194,16 +194,11 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     padding-top: 63px;
     padding-bottom: 63px;
     position: relative;
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
   }
 
   &__first-image {
@@ -213,9 +208,8 @@
   }
   &__second-image {
     position: absolute;
-    bottom: 50%;
-    left: 80%;
-    
+    bottom: 0;
+    right: 0;
    
    
   }
