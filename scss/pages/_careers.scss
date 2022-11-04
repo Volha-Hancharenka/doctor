@@ -196,7 +196,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 63px 0;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__first-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__second-image {
+    position: absolute;
+    bottom: 50%;
+    left: 80%;
+    
+   
+   
   }
 
   &__title {
