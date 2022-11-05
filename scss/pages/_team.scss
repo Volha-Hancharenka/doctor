@@ -53,6 +53,7 @@
 .story {
   &__container {
     display: flex;
+    //justify-content: space-between;
     @media (max-width: 767px) {
       flex-direction: column-reverse;
     }
@@ -60,6 +61,8 @@
 
   &__text {
     padding-right: 60px;
+    max-width: 562px;
+    width: 100%;
     @media (max-width: 767px) {
       padding-right: 0;
       margin-top: 32px;
@@ -95,6 +98,22 @@
   }
 
   &__image {
+    position: relative;
+    width: 578px;
+    height: 578px;
+    overflow: hidden;
+    @include adaptiveClamp("width", 578, 478, 1200, 1000, 1);
+    @include adaptiveClamp("height", 578, 478, 1200, 1000, 1);
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
   }
 }
 
@@ -245,7 +264,6 @@
     font-weight: 500;
     line-height: 31px;
     color: #5e676b;
-   
   }
 }
 
