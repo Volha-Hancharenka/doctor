@@ -106,14 +106,17 @@
     @include adaptiveClamp("width", 578, 478, 1200, 1000, 1);
     @include adaptiveClamp("height", 578, 478, 1200, 1000, 1);
     @media (max-width: 768px) {
-     width: 100%;
-     max-width: 578px;
-     height: 578px;
-     margin: 0 auto;
+      width: 100%;
+      max-width: 578px;
+      height: 578px;
+      margin: 0 auto;
     }
-    //@include adaptiveClamp("width", 578, 378,625, 425, 1);
-    @include adaptiveClamp("height", 578, 378, 625, 425, 1);
 
+    //@include adaptiveClamp("width", 578, 378,625, 425, 1);
+
+    @media (max-width: 625px) {
+      @include adaptiveClamp("height", 578, 378, 625, 425, 1);
+    }
     img {
       position: absolute;
       top: 50%;
