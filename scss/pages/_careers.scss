@@ -210,13 +210,41 @@
     position: absolute;
     top: 0;
     left: 0;
-    
+    @include adaptiveClamp("width", 288, 82, 1400, 767, 1);
+    @include adaptiveClamp("height", 285, 82, 1400, 767, 1);
+    @media (max-width: 650px) {
+      @include adaptiveClamp("width", 82, 40, 650, 320, 1);
+      @include adaptiveClamp("height", 82, 40, 650, 320, 1);
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   &__second-image {
     position: absolute;
     bottom: 0;
     right: 0;
-    
+    @include adaptiveClamp("width", 288, 82, 1400, 767, 1);
+    @include adaptiveClamp("height", 285, 82, 1400, 767, 1);
+    @media (max-width: 650px) {
+      @include adaptiveClamp("width", 82, 40, 650, 320, 1);
+      @include adaptiveClamp("height", 82, 40, 650, 320, 1);
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__title {
