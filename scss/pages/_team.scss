@@ -115,7 +115,7 @@
     //@include adaptiveClamp("width", 578, 378,625, 425, 1);
 
     @media (max-width: 625px) {
-      @include adaptiveClamp("height", 578, 378, 625, 425, 1);
+      @include adaptiveClamp("height", 578, 300, 625, 325, 1);
     }
     img {
       position: absolute;
@@ -224,12 +224,41 @@
   }
 
   &__image {
+    position: relative;
+    width: 384px;
+    height: 384px;
+    overflow: hidden;
+    @include adaptiveClamp("width", 384, 200, 900, 768, 1);
+    @include adaptiveClamp("height", 384, 200, 900, 768, 1);
+
+    @media (max-width: 767px) {
+      max-width: 384px;
+      height: 384px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    @media (max-width: 450px) {
+      @include adaptiveClamp("height", 384, 300, 450, 320, 1);
+      }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
   }
 
   &__column {
     padding-left: 48px;
+    width: 564px;
+    max-width: 100%;
+    @include adaptiveClamp(" padding-left", 48, 10, 1000, 768, 1);
     @media (max-width: 767px) {
       padding-left: 0;
+      width: 100%;
     }
   }
 
@@ -238,35 +267,6 @@
     justify-content: space-between;
     @media (max-width: 767px) {
       margin-top: 24px;
-    }
-
-    &_title {
-      display: flex;
-      flex-direction: column;
-      h4 {
-        margin-bottom: 12px;
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 38px;
-        color: #1c2147;
-        @media (max-width: 500px) {
-          margin-bottom: 4px;
-        }
-        @include adaptiveClamp("font-size", 32, 20, 767, 425, 1);
-        @include adaptiveClamp("line-height", 38, 24, 767, 425, 1);
-      }
-      p {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        color: #9192a1;
-        @include adaptiveClamp("font-size", 16, 14, 767, 425, 1);
-        @include adaptiveClamp("line-height", 24, 21, 767, 425, 1);
-      }
-    }
-
-    &_icon {
-      align-self: center;
     }
   }
 
@@ -279,8 +279,47 @@
   }
 }
 
-.icon-linkdelin {
-  margin-right: 8px;
-}
-.icon-twitter {
+.title-people {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    h4 {
+      margin-bottom: 12px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 38px;
+      color: #1c2147;
+      @media (max-width: 500px) {
+        margin-bottom: 4px;
+      }
+      @include adaptiveClamp("font-size", 32, 20, 767, 425, 1);
+      @include adaptiveClamp("line-height", 38, 24, 767, 425, 1);
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: #9192a1;
+      @include adaptiveClamp("font-size", 16, 14, 767, 425, 1);
+      @include adaptiveClamp("line-height", 24, 21, 767, 425, 1);
+    }
+  }
+
+  &__icon {
+    align-self: center;
+    display: flex;
+    &_linkdelin,
+    &_twitter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      width: 40px;
+      height: 40px;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: #e4f5f2;
+      }
+    }
+  }
 }
