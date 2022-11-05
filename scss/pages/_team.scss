@@ -54,18 +54,19 @@
   &__container {
     display: flex;
     //justify-content: space-between;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       flex-direction: column-reverse;
     }
   }
 
   &__text {
     padding-right: 60px;
-    max-width: 562px;
-    width: 100%;
-    @media (max-width: 767px) {
+    width: 562px;
+    max-width: 100%;
+    @media (max-width: 768px) {
       padding-right: 0;
       margin-top: 32px;
+      width: 100%;
     }
   }
 
@@ -75,22 +76,22 @@
     line-height: 38px;
     color: #101859;
     margin-bottom: 24px;
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       margin-bottom: 20px;
     }
-    @include adaptiveClamp("font-size", 32, 24, 767, 425, 1);
-    @include adaptiveClamp("line-height", 38, 28, 767, 425, 1);
+    @include adaptiveClamp("font-size", 32, 24, 768, 425, 1);
+    @include adaptiveClamp("line-height", 38, 28, 768, 425, 1);
 
     &_text {
       font-size: 18px;
       font-weight: 500;
       line-height: 31px;
       color: #5e676b;
-      @include adaptiveClamp("font-size", 18, 14, 767, 425, 1);
-      @include adaptiveClamp("line-height", 31, 23, 767, 425, 1);
+      @include adaptiveClamp("font-size", 18, 14, 768, 425, 1);
+      @include adaptiveClamp("line-height", 31, 23, 768, 425, 1);
       > p {
         margin-bottom: 20px;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           margin-bottom: 16px;
         }
       }
@@ -102,8 +103,16 @@
     width: 578px;
     height: 578px;
     overflow: hidden;
+    display: flex;
     @include adaptiveClamp("width", 578, 478, 1200, 1000, 1);
     @include adaptiveClamp("height", 578, 478, 1200, 1000, 1);
+    @media (max-width: 768px) {
+      width: 578px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+  
+    }
 
     img {
       position: absolute;
