@@ -68,7 +68,25 @@
       gap: 0;
       padding-bottom: 24px;
     }
+    span {
+      display: none;
+
+      @media (max-width: 767px) {
+        position: absolute;
+        top: 2px;
+        right: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        transform: rotate(-225deg);
+      }
+    }
   }
+
   &__item {
     font-size: 16px;
     font-weight: 600;
