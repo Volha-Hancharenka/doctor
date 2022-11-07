@@ -7,18 +7,22 @@
     }
   }
   &__questions {
-    margin-top: 60px;
+    position: relative;
+    padding-top: 60px;
     @media (max-width: 767px) {
-      margin-top: 24px;
+      padding-top: 24px;
     }
   }
 }
 .policy {
+  position: relative;
   &__container {
+  
   }
   &__title {
     padding-bottom: 108px;
     max-width: 688px;
+
     @media (max-width: 767px) {
       padding-bottom: 40px;
     }
@@ -43,8 +47,32 @@
       @include adaptiveClamp("line-height", 31, 24, 767, 425, 1);
     }
   }
+  &__image {
+    position: absolute;
+    top: 180px;
+    left: 60%;
+    @include adaptiveClamp("top", 180, 100, 1200, 800, 1);
+    width: 179px;
+    height: 179px;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+ 
 }
 .question {
+ 
+  &__background-image {
+    position: absolute;
+    top: -25%;
+    right:0;
+    @media (max-width: 1200px) {
+     
+    @include adaptiveClamp("width", 549, 182, 1400, 1000, 1);
+    @include adaptiveClamp("height", 549, 182, 1400, 1000, 1);
+  }
+}
+    
   &__container {
     display: flex;
     @media (max-width: 767px) {
@@ -74,7 +102,7 @@
       @media (max-width: 767px) {
         position: absolute;
         top: 2px;
-        right: 12px;
+        right: 0;
         display: flex;
         justify-content: center;
         align-items: center;
