@@ -1,0 +1,88 @@
+.page {
+  &__error {
+    padding-top: 247px;
+    @include adaptiveClamp("padding-top", 247, 159, 768, 425, 1);
+  }
+}
+.error {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 770px;
+  }
+
+  &__title {
+    span {
+      font-size: 200px;
+      font-weight: 700;
+      line-height: 240px;
+      color: #101859;
+      margin-bottom: 40px;
+      @include adaptiveClamp("font-size", 200, 120, 767, 425, 1);
+      @include adaptiveClamp("line-height", 240, 144, 767, 425, 1);
+      @media (max-width: 767px) {
+        margin-bottom: 24px;
+      }
+    }
+    h1 {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 77px;
+      color: #101859;
+      margin-bottom: 12px;
+      @include adaptiveClamp("font-size", 64, 36, 767, 425, 1);
+      @include adaptiveClamp("line-height", 77, 43, 767, 425, 1);
+      @media (max-width: 767px) {
+        margin-bottom: 24px;
+      }
+    }
+    p {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 42px;
+      color: #9192a1;
+      margin-bottom: 40px;
+      @include adaptiveClamp("font-size", 28, 16, 767, 425, 1);
+      @include adaptiveClamp("line-height", 42, 24, 767, 425, 1);
+      @media (max-width: 767px) {
+        margin-bottom: 24px;
+      }
+    }
+    img {
+      margin-right: 40px;
+      margin-left: 40px;
+      width: 140px;
+      height: 140px;
+      @media (max-width: 767px) {
+        @include adaptiveClamp("margin-right", 40, 0, 767, 325, 1);
+        @include adaptiveClamp("margin-left", 40, 0, 767, 325, 1);
+        @include adaptiveClamp("width", 140, 100, 767, 425, 1);
+        @include adaptiveClamp("height", 140, 100, 767, 425, 1);
+      }
+    }
+  }
+
+  &__btn {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #fff;
+    border: 1px solid #101859;
+    background-color: #101859;
+    height: 51px;
+    padding: 0 32px;
+    margin-bottom: 233px;
+    @media (max-width: 767px) {
+      margin-bottom: 215px;
+    }
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: #101859;
+    }
+  }
+}
