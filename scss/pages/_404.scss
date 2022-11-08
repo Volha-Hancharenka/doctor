@@ -1,5 +1,6 @@
 .page {
   &__error {
+    background: linear-gradient(180deg, #E4F5F2 0%, rgba(228, 245, 242, 0) 100%);
     padding-top: 247px;
     @include adaptiveClamp("padding-top", 247, 159, 768, 425, 1);
   }

@@ -57,11 +57,14 @@
 .question {
   &__background-image {
     position: absolute;
-    bottom: 960px;
+    top:  prc(-315, 1240);
     right: 0;
     width: 325px;
     height: 549px;
-    
+   
+    @media (max-width: 767px) {
+      display: none;
+    }
     @include adaptiveClamp("width", 325, 81, 1400, 768, 1);
     @include adaptiveClamp("height", 549, 185, 1400, 768, 1);
     img {
