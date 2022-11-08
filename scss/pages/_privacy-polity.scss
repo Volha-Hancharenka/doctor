@@ -7,7 +7,6 @@
     }
   }
   &__questions {
-   
   }
 }
 .policy {
@@ -59,12 +58,11 @@
     position: absolute;
     top: 0;
     right: 0;
-    //width: 549px;
-    //height: 549px;
-    @media (max-width: 1200px) {
-      @include adaptiveClamp("width", 549, 182, 1400, 1000, 1);
-      @include adaptiveClamp("height", 549, 182, 1400, 1000, 1);
-    }
+    width: 549px;
+    height: 549px;
+
+    @include adaptiveClamp("width", 549, 182, 1400, 1000, 1);
+    @include adaptiveClamp("height", 549, 182, 1400, 1000, 1);
   }
 
   &__container {
