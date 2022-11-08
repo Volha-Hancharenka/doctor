@@ -7,6 +7,7 @@
     }
   }
   &__questions {
+    position: relative;
   }
 }
 .policy {
@@ -58,8 +59,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 549px;
-    height: 549px;
+   // width: 549px;
+   // height: 549px;
 
     @include adaptiveClamp("width", 549, 182, 1400, 1000, 1);
     @include adaptiveClamp("height", 549, 182, 1400, 1000, 1);
@@ -67,7 +68,7 @@
 
   &__container {
     display: flex;
-    position: relative;
+   
     @media (max-width: 767px) {
       flex-direction: column;
     }
