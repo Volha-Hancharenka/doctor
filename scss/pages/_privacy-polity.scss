@@ -57,18 +57,26 @@
 .question {
   &__background-image {
     position: absolute;
-    top: 0;
+    bottom: 960px;
     right: 0;
-   // width: 549px;
-   // height: 549px;
-
-    @include adaptiveClamp("width", 549, 182, 1400, 1000, 1);
-    @include adaptiveClamp("height", 549, 182, 1400, 1000, 1);
+    width: 325px;
+    height: 549px;
+    
+    @include adaptiveClamp("width", 325, 81, 1400, 768, 1);
+    @include adaptiveClamp("height", 549, 185, 1400, 768, 1);
+    img {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__container {
     display: flex;
-   
+   position: relative;
     @media (max-width: 767px) {
       flex-direction: column;
     }
