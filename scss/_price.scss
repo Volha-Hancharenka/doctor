@@ -157,7 +157,7 @@
     background-color: inherit;
     transition: all 0.3s ease;
     margin-top: 20px;
-    &:hover {
+    &:hover, &:focus {
       background-color: #101859;
       color: #ffffff;
     }
@@ -171,7 +171,7 @@
     background-color: #101859;
     color: #ffffff;
     transition: all 0.3s ease;
-    &:hover {
+    &:hover, &:focus {
       background-color: #ffffff;
       color: #101859;
     }

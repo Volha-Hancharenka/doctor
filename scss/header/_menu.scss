@@ -60,7 +60,7 @@
     position: relative;
     z-index: 5;
     transition: all 0.3s ease 0s;
-    &:hover {
+    &:hover, &:focus {
       border: 1px solid #242425;
       transition: all 0.3s ease 0s;
     }
